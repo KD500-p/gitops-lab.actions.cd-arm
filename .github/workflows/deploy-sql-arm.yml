@@ -23,8 +23,8 @@ steps:
   - name: Deploy SQL Server ARM template
     id: deploy-sql-server
     uses: azure/arm-deploy@v1
-      with:
-        subscriptionId: ${{ env.AZURE_SUBSCRIPTION }}
-        resourceGroupName: ${{ env.AZURE_RG }}
-        template: ./templates/sqltemplate.json
-        parameters: sqladmin=${{secrets.SQL_ADMIN}} sqlpwd=${{secrets.SQL_PWD}}
+    with:
+      subscriptionId: ${{ env.AZURE_SUBSCRIPTION }}
+      resourceGroupName: ${{ env.AZURE_RG }}
+      template: ./templates/sqltemplate.json
+      parameters: sqladmin=${{secrets.SQL_ADMIN}} sqlpwd=${{secrets.SQL_PWD}}
