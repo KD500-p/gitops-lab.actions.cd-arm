@@ -25,4 +25,4 @@ jobs:
           subscriptionId: ${{ env.AZURE_SUBSCRIPTION }}
           resourceGroupName: ${{ env.AZURE_RG }}
           template: ./templates/deploywebapp.json
-          parameters: location=Sweden Central
+          parameters: location=swedencentral
